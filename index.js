@@ -3,6 +3,7 @@
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import fs from 'fs';
+import solution from "./solution.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,5 +16,5 @@ const content = fs.readFileSync(path.join(
 ), 'utf-8');
 
 // BEGIN
-console.log(content)
+solution(content);
 // END
