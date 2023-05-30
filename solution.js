@@ -46,7 +46,7 @@ const worstPricedCreature = data2.reduce(findWorstValue);
 // console.log(data2[0][2])
 // console.log(worstPricedCreature);
 const worstPricedValue = Math.round(worstPricedCreature[7] / worstPricedCreature[2]);
-console.log(`Юнит самый невыгодным по соотношению цены и силы: ${worstPricedCreature[1]} - ${worstPricedValue} USD за единицу силы`);
+console.log(`Самый невыгодный юнит по соотношению цены и силы: ${worstPricedCreature[1]} - ${worstPricedValue} рублей за единицу силы`);
 
 
 const findBestValue = (acc, row) => (row[7] / row[2] < acc[7] / acc[2]) ? row : acc;
@@ -54,7 +54,7 @@ const bestPricedCreature = data2.reduce(findBestValue);
 // console.log(data2[0][2])
 // console.log(bestPricedCreature);
 const bestPricedValue = Math.round(bestPricedCreature[7] / bestPricedCreature[2]);
-console.log(`Юнит самый выйгодный по соотношению цены и силы: ${bestPricedCreature[1]} - ${bestPricedValue} USD за единицу силы`);
+console.log(`Самый выгодный юнит по соотношению цены и силы: ${bestPricedCreature[1]} - ${bestPricedValue} рублей за единицу силы`);
 
 };
 
